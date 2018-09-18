@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 
-export default class App extends Component {
+export default class WorkShop extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome</Text>
+        <Mytext message="Genex InfoTech" />
       </View>
     );
+  }
+}
+
+class Mytext extends Component {
+  render() {
+    return <Text style={styles.welcome}>Welcome {this.props.message}</Text>;
   }
 }
 
